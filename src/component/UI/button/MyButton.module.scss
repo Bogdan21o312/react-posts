@@ -1,0 +1,52 @@
+@import "../../../style/Style";
+
+.myBtn {
+  background-color: #FCD535;
+  color: #181A1F;
+  padding: rem(10) rem(50);
+  display: inline-block;
+  text-align: center;
+  border-radius: rem(100);
+  transition: all 0.6s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      padding: rem(15) rem(60);
+      background-color: #181A1F;
+      color: #FCD535;
+    }
+  }
+}
+
+.navBarButton {
+  background-color: #FCD535;
+  color: #181A1F;
+  padding: rem(10) rem(20);
+  border-radius: rem(100);
+  transition: all 0.6s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      padding: rem(12) rem(30);
+      background-color: #181A1F;
+      color: #FCD535;
+    }
+  }
+}
+
+.postsButton {
+  background-color: #FCD535;
+  margin: rem(10);
+  color: #181A1F;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  justify-content: center;
+  padding: rem(10) rem(15);
+  border-radius: rem(10);
+  transition: all 0.3s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #181A1F;
+      color: #FCD535;
+    }
+  }
+}

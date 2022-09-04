@@ -1,0 +1,45 @@
+@use "sass:math";
+
+@import "../Style";
+
+.home {
+
+  &__container {
+
+  }
+
+  &__title {
+    @include adaptiveValue("font-size", 40, 30);
+    text-align: center;
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 40);
+    }
+  }
+
+  &__sub-title {
+    text-align: center;
+    @include adaptiveValue("font-size", 30, 25);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 30);
+    }
+  }
+  &__text {
+      text-align: center;
+    @include adaptiveValue("font-size", 25, 20);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 20);
+    }
+  }
+  &__sub-text {
+    color: #EFB90B;
+    text-align: center;
+    @include adaptiveValue("font-size", 22, 18);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 40);
+    }
+    &:last-child {
+      @include adaptiveValue("margin-top", 50, 40);
+    }
+  }
+}

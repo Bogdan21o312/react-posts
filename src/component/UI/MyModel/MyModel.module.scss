@@ -1,0 +1,25 @@
+@import "../../../style/Style";
+
+.myModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.myModalContent {
+    padding: rem(25);
+    background: #FCD535;
+    border-radius: rem(16);
+    min-width: rem(250);
+    text-align: center;
+}
+
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

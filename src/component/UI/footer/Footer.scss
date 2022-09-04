@@ -1,0 +1,20 @@
+@import "../../../style/Style";
+
+footer {
+  position: relative;
+  background-color: #15191D;
+  min-height: rem(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: rem(2);
+    background-color: #24282F;
+  }
+}

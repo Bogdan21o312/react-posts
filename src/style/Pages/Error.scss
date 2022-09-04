@@ -1,0 +1,28 @@
+@use "sass:math";
+
+@import "../Style";
+
+.error__title {
+  font-size: 1000px;
+}
+
+.error {
+  &__container {
+
+  }
+
+  &__title {
+    @include adaptiveValue("font-size", 100, 60);
+    line-height: math.div(100, 100);
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+
+  &__text {
+    @include adaptiveValue("font-size", 40, 30);
+    line-height: math.div(50, 40);
+    text-align: center;
+    letter-spacing: 0.1em;
+    @include adaptiveValue("margin-top", 40, 20);
+  }
+}

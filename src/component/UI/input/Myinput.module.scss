@@ -1,0 +1,16 @@
+@import "../../../style/Style";
+
+.myInput {
+    width: 100%;
+    padding: rem(5) rem(15);
+    margin: rem(5) 0;
+    border: rem(1) solid yellow;
+    background-color: black;
+    color: #EAECEF;
+    transition: all 0.6s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.01);
+        }
+    };
+}

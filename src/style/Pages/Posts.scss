@@ -1,0 +1,151 @@
+@use "sass:math";
+
+@import "../Style";
+
+
+.posts {
+
+  &__title {
+    @include adaptiveValue("font-size", 50, 40);
+    letter-spacing: 0.1em;
+    @include adaptiveValue("margin-top", 40, 20);
+    @include adaptiveValue("margin-bottom", 40, 20);
+    text-align: center;
+  }
+
+  &__model {
+    &_title {
+      @include adaptiveValue("font-size", 40, 30);
+      text-align: center;
+      color: #161A1E;
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    row-gap: rem(10);
+    @include adaptiveValue("column-gap", 40, 10);
+    @include adaptiveValue("margin-top", 30, 10);
+    @include adaptiveValue("margin-bottom", 30, 10);
+  }
+
+  &__filters {
+
+  }
+}
+
+//====================================================================================================
+
+.post {
+
+  &__container {
+
+  }
+
+  &__content {
+    padding: rem(10) rem(20);
+    display: flex;
+    flex: 1 1 auto;
+    border: solid rem(1) #EFB90B;
+    justify-content: space-between;
+  }
+
+  &__block-text {
+
+  }
+
+  &__title {
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: math.div(20, 18);
+  }
+
+  &__text {
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: math.div(16, 14);
+  }
+
+  &__buttons {
+  }
+}
+
+//====================================================================================================
+
+.post-open {
+  &__title {
+    @include adaptiveValue("font-size", 50, 30);
+
+    &:first-child {
+      @include adaptiveValue("margin-top", 30, 10);
+    }
+
+    &:not(last-child) {
+      @include adaptiveValue("margin-bottom", 30, 20);
+    }
+  }
+
+  &__sub-title {
+    @include adaptiveValue("font-size", 30, 20);
+
+    &:first-child {
+      @include adaptiveValue("margin-top", 30, 10);
+    }
+
+    &:not(last-child) {
+      @include adaptiveValue("margin-bottom", 20, 15);
+    }
+  }
+
+  &__comments-block {
+
+  }
+}
+
+.block-comment {
+  &__title {
+    color: #EFB90B;
+    @include adaptiveValue("font-size", 25, 18);
+
+    &:first-child {
+      @include adaptiveValue("margin-top", 20, 10);
+    }
+
+    &:not(last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+
+  }
+
+  &__content {
+    padding: rem(15);
+    border: rem(1) solid;
+  }
+
+  &__email {
+    color: #FCD535;
+
+    @include adaptiveValue("font-size", 20, 16);
+
+    &:first-child {
+      @include adaptiveValue("margin-top", 20, 10);
+    }
+
+    &:not(last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+
+  &__body {
+
+    @include adaptiveValue("font-size", 16, 14);
+
+    &:first-child {
+      @include adaptiveValue("margin-top", 20, 10);
+    }
+
+    &:not(last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+}

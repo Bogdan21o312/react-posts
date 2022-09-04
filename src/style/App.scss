@@ -1,0 +1,37 @@
+@import "Style";
+
+main {
+  background-color: #161A1E;
+  @include adaptiveValue("padding-top", 50, 20);
+  @include adaptiveValue("padding-bottom", 50, 20);
+}
+
+
+.page {
+  cursor: pointer;
+  padding: rem(10);
+  border: rem(1) solid #f8d261;
+
+  &__current {
+    font-weight: bold;
+    border: rem(1) solid #E8ECEF;
+  }
+
+  &__wrapper {
+    cursor: pointer;
+    padding: rem(10);
+    border: rem(1) solid #f8d261;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+
+select {
+  color: #E8ECEF;
+  background-color: #161A1E;
+  @include adaptiveValue("margin-top", 15, 10);
+  @include adaptiveValue("margin-bottom", 15, 10);
+}
